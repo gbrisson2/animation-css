@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo | Toggle Navigation</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="flex">
+     <svg class="chocolate-svg" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 369.412 369.412" style="enable-background:new 0 0 369.412 369.412" xml:space="preserve">
+    <path style="fill:#9b4c00" d="m365.017 131.674-42.414-42.416-.011-.01-21.213-21.213-.001-.002-21.212-21.213c-.004-.004-.006-.006-.012-.008L237.738 4.395a14.997 14.997 0 0 0-21.213-.002l-42.426 42.429-.01.01-38.883 38.882 10.607 10.605 3.281 3.281 60.359 60.359 53.031 53.031 10.607 10.607 10.607 10.605 38.891-38.891 42.428-42.427c5.859-5.856 5.858-15.355 0-21.21z"/>
+    <path style="fill:#671f03" d="m365.017 131.674-42.414-42.416-.011-.01-21.213-21.213-91.925 91.924 53.031 53.031 10.607 10.607 10.607 10.605 38.891-38.891 42.428-42.427c5.858-5.856 5.857-15.355-.001-21.21z"/>
+    <path style="fill:#762204" d="m163.494 205.92 10.605-10.607h-.002L68.031 301.377l.004.003 84.851-84.854z"/>
+    <path style="fill:#9b4c00" d="m227.132 290.771 10.605-10.605c5.857-5.858 5.859-15.355 0-21.213l-31.819-31.82h.001l-63.641-63.64v.002l-31.822-31.822a14.99 14.99 0 0 0-21.209 0v.003L78.64 142.28 4.396 216.527c-5.861 5.857-5.859 15.355-.002 21.212l31.818 31.819v.001l63.641 63.64 31.82 31.819a14.994 14.994 0 0 0 21.212 0l74.247-74.247z"/>
+    <path style="fill:#671f03" d="M237.738 280.166c5.857-5.858 5.859-15.355 0-21.213l-63.639-63.64-10.605 10.606-10.607 10.606-84.852 84.855 63.639 63.639a14.994 14.994 0 0 0 21.212 0l74.246-74.247 10.606-10.606z"/>
+    <path style="fill:#af2e08" d="m311.986 121.066-.002.001z"/>
+    <path style="fill:#671f03" d="m227.132 78.641 10.606-10.606 10.605-10.606-21.211-21.216-21.213 21.216z"/>
+    <path transform="rotate(134.999 311.986 142.281)" style="fill:#541604" d="M296.983 127.281h30.002v30.001h-30.002z"/>
+    <path style="fill:#922806" d="m269.558 121.066 21.213-21.212-10.607-10.607-21.211 21.212 3.031 3.032z"/>
+    <path transform="rotate(-134.999 181.172 103.39)" style="fill:#671f03" d="M166.172 83.389h29.998v40.001h-29.998z"/>
+    <path style="fill:#b55404" d="m258.953 110.459 3.031 3.032 7.574 7.575 21.213-21.212-10.607-10.607-10.606-10.605-.002-.002-21.209 21.214z"/>
+    <path style="fill:#671f03" d="m258.953 110.459 3.031 3.032 7.574 7.575 21.213-21.212-10.607-10.607-10.606-10.605-.002-.002-21.209 21.214z"/>
+    <path style="fill:#541604" d="m269.558 121.066 21.213-21.212-10.605-10.605-21.212 21.211 3.03 3.031z"/>
+    <path style="fill:#671f03" d="m243.042 136.977-5.304-5.303-10.608-10.606-16.668 16.666-11.615 11.618 6.141 6.139 4.465 4.467 10.607 10.606 28.285-28.284.002.001z"/>
+    <path style="fill:#541604" d="m290.773 184.706-21.215-21.213-28.283 28.283.001.003 21.21 21.211 28.287-28.283zM248.347 142.281l-5.305-5.304-5.304-5.303-28.285 28.284 10.607 10.606 28.285-28.284z"/>
+    <path style="fill:#e3e3e5" d="M305.771 248.348a14.99 14.99 0 0 0-4.393-10.607l-10.607-10.607-10.607-10.605-10.607-10.607-21.209-21.212v-.003L237.74 174.1l-10.607-10.606-10.606-10.604-.001-.002-4.466-4.467-6.14-6.14-10.607-10.606-10.605-10.605-31.822-31.82-10.605-10.606-10.607-10.608c-5.857-5.857-15.355-5.856-21.215 0l-42.426 42.426c-5.855 5.859-5.855 15.355.004 21.215L78.64 142.28l74.246 74.247 74.246 74.244 10.605 10.608a14.954 14.954 0 0 0 10.607 4.392 14.937 14.937 0 0 0 10.605-4.392l42.428-42.427a14.984 14.984 0 0 0 4.394-10.604z"/>
+    <path style="fill:#d6d5d8" d="M305.771 248.348a14.99 14.99 0 0 0-4.393-10.607l-10.607-10.607-10.607-10.605-10.607-10.607-21.209-21.212v-.003L237.74 174.1l-10.607-10.606-10.606-10.604-63.64 63.639 74.246 74.244 10.605 10.608a14.954 14.954 0 0 0 10.607 4.392 14.937 14.937 0 0 0 10.605-4.392l42.428-42.427a14.996 14.996 0 0 0 4.393-10.606z"/>
+</svg>
+ <h1>Chocolate</h1>
+            <button class="nav-btn">&#9776;</button>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Milk</a></li>
+                <li><a href="#">White</a></li>
+                <li><a href="#">Dark</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2><span class="word-change word-1">Chocolate Makes</span><span class="word-change  word-2"> Life Better</span></h2>
+        <div class="card">
+            <img class="milk-photo" src="img/milk-chocolate.jpg" alt="Milk Chocolate photo">
+        <div class="container">
+            <div class="one">
+            <h3>Milk</h3>
+            <p>Milk chocolate often has a flavor profile that can be described as sweet and chocolatey, with notes of cooked milk and caramelized sugar and a vanilla aftertaste.</p>
+            <div class="button button-1"><a href="#">SEE MORE!</a></div>
+        </div>
+        </div>
+    </div>
+        <div class="card">
+            <img class="white-photo" src="img/white-chocolate.jpg" alt="White Chocolate Photo">
+        <div class="container">
+            <div class="two">
+            <h3>White</h3>
+            <p>White chocolate is believed to have been created in the 1930s, and is a pale, milky solid with light undertones of chocolate flavour. White chocolate is commonly made with powdered or condensed milk and a lot of sugar</p>
+             <div class="button button-2"><a href="#"> SEE MORE!</a></div>
+        </div>
+    </div>
+    </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+body{
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: burlywood;
+    padding: 1rem;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+h1{ 
+    margin: 0 0.75rem;
+    color: white;
+ }
+ section{
+    background-color: bisque;
+ }
+ h2{
+    align-content: center;
+    font-size: 2rem;
+    color: #a0785a;
+    text-align: center;
+    padding-top: 2rem;
+ }
+.container{
+    padding: 2rem;
+    flex-wrap: wrap;
+    margin-top: 13rem;
+    font-family: sans-serif;
+}
+h3{
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 1rem solid #a0785a;
+    color: #836953;
+}
+.card{
+    display: flex;
+}
+
+.card img {
+    height: 40%;
+    width: 40%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    color: #6f4e37;
+    margin-bottom: 2rem;
+}
+
+.chocolate-svg{
+    width: 3rem;
+    height: 3rem;
+}
+.button{
+    color: #836953;
+    border-radius: 180px;
+    border: 5px solid #a0785a;
+    font-weight: bold;
+    max-width: 18rem;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+}
+
+.button a{
+    color: #a0785a;
+}
+.button{
+    transition: all .5s ease;
+}
+.button:hover{
+    background-color: #a0785a ;
+}
+.button a:hover{
+    color: white;
+}
+.white-photo:hover{
+    border-radius: 7rem;
+    transition: all .5s ease-in-out;
+    transform: translate(10px);
+}
+/*ANIMATION OPTIONS*/
+
+header svg, h1{
+    animation: 
+    nudge 3s linear infinite alternate;
+}
+@keyframes nudge{
+    0%, 100%{
+        transform: translate(0,0);
+    }
+    50% {
+        transform: translate(50px);
+    }
+}
+
+
+.milk-photo{
+    transition: width 1s, height 2s;
+}
+.milk-photo:hover{
+    height: 50%;
+    width: 50%;
+
+}
+
+.word-change{
+    animation: color-animation 5s linear infinite;
+}
+.word-1{
+    color: #483C32;
+    color:  #C4A484;
+    color: #5C4033;
+    color:  #6F4E37;
+ 
+}
+
+@keyframes color-animation {
+    0% { color: #C4A484 }
+    25% { color: #5C4033  }
+    50%{ color: #483C32;}
+    75%{color:  #6F4E37}
+
+
+}
+/*END OF ANIMATION*/
+
+
+
+
+
+.nav-btn { margin-left: auto; }
+
+/** style your nav before you hide it **/
+ul.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+/** spacing on the li **/
+li {
+    line-height: 3.125rem; /**50px**/
+    border-bottom: 1px solid #f2f2f2;
+}
+
+/** put all text based styling on the <a> tag */
+a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 1.375rem; /**22px **/
+
+}
+
+nav {
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+/**special class to show the nav  - this doesn't get added to the markup, JS will do this for us*/
+.active-nav { 
+    /* display: block; */
+    max-height: 100vh;
+ }
